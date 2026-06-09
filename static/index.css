@@ -106,3 +106,14 @@
     bottom: 83.53px;
   }
 }
+
+/* Services */
+.card-list .card {
+  min-width: 306px;
+}
+
+@media (max-width: 375px) {
+  .card-list .card {
+    min-width: 260px;
+  }
+}
