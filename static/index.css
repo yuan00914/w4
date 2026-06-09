@@ -1,3 +1,4 @@
+/* Hero */
 .hero {
   height: calc(
     100vh - 64px
@@ -115,5 +116,46 @@
 @media (max-width: 375px) {
   .card-list .card {
     min-width: 260px;
+  }
+}
+
+/* Projects */
+.project-card {
+  &:nth-of-type(1) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_1.png?raw=true");
+  }
+
+  &:nth-of-type(2) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_2.png?raw=true");
+  }
+
+  &:nth-of-type(3) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_3.png?raw=true");
+  }
+}
+
+.project-content {
+  max-width: 386px;
+}
+
+@media (max-width: 375px) {
+  .project-card {
+    padding-top: 280px;
+
+    &:nth-of-type(1) {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_1.png?raw=true");
+    }
+
+    &:nth-of-type(2) {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_2.png?raw=true");
+    }
+
+    &:nth-of-type(3) {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_3.png?raw=true");
+    }
+  }
+
+  .project-content {
+    max-width: none;
   }
 }
