@@ -1,0 +1,108 @@
+.hero {
+  height: calc(
+    100vh - 64px
+  ); /* 桌機版扣除導覽列高度後，讓 hero 填滿剩餘螢幕高度 */
+  overflow: hidden; /* 隱藏超出 hero 高度範圍的內容 */
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.resume {
+  border: 1px solid var(--color-neutral-700);
+}
+
+/* 讓圖片填滿容器，並透過 object-fit 裁切多餘部分，避免變形 */
+.hero .main-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 以下均為裝飾物定位 */
+
+.decorate-1 {
+  position: absolute;
+  top: 97px;
+  left: -81px;
+}
+
+.decorate-2 {
+  position: absolute;
+  bottom: 87px;
+  right: -80px;
+}
+
+.decorate-3 {
+  position: absolute;
+
+  &.flower-left-bottom {
+    width: 80px;
+    height: 80px;
+    bottom: 192px;
+    left: 391px;
+  }
+
+  &.flower-left-top {
+    top: 56px;
+    left: -226px;
+  }
+
+  &.flower-right-center {
+    top: 206px;
+    right: -170px;
+  }
+}
+
+.decorate-4 {
+  position: absolute;
+  top: 120px;
+  left: -87px;
+}
+
+.decorate-5 {
+  position: absolute;
+  left: 211px;
+  bottom: 83.53px;
+}
+
+/* 佔位符，用於表示導覽列 */
+.placeholder {
+  height: 64px;
+  background-color: #fa0;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: auto;
+  }
+
+  .decorate-1 {
+    left: -15px;
+    width: 80px;
+  }
+
+  .decorate-2 {
+    right: -13px;
+    width: 80px;
+  }
+
+  .decorate-3 {
+    position: absolute;
+
+    &.flower-left-bottom {
+      bottom: 158px;
+      left: 298px;
+    }
+  }
+
+  .decorate-5 {
+    left: 134px;
+    bottom: 83.53px;
+  }
+}
