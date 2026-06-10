@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./static/reset.css" />
     <link rel="stylesheet" href="./static/base.css" />
     <link rel="stylesheet" href="./static/blogs.css" />
@@ -31,13 +35,13 @@
                 <picture>
                   <source
                     srcset="
-                      https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-mb.svg
+                      https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/device-mobile.svg
                     "
                     media="(max-width: 992px)"
                   />
                   <img
-                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-pc.svg"
-                    alt=""
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/device-pc.svg"
+                    alt="Nelson's Portfolio"
                   />
                 </picture>
               </a>
@@ -53,7 +57,7 @@
               >
                 <li><a class="nav-link" href="#">服務項目</a></li>
                 <li><a class="nav-link" href="#">專案作品</a></li>
-                <li><a class="nav-link" href="#">部落格</a></li>
+                <li><a class="nav-link" href="./blogs.html">部落格</a></li>
                 <li><a class="nav-link" href="#">與我聯絡</a></li>
               </ul>
             </div>
@@ -62,12 +66,29 @@
       </nav>
     </header>
 
-    <div class="container">
-      <div class="d-flex gap-24">
+    <section class="blogs-banner bg-cover-center py-109 py-mb-140">
+      <div class="container relative">
+        <h1 class="col-12 text-neutral-0 text-center">
+          <span
+            class="d-block heading-xxxl heading-mb-xl mb-8 mb-mb-4 animate__fadeInUp"
+            >BLOGS</span
+          >
+          <span class="d-block heading-xxl heading-mb-xl animate__fadeInUp"
+            >部落格</span
+          >
+        </h1>
+        <p class="display-1 display-mb-2 text-primary-50 blogs-banner-bg-text">
+          BLOG
+        </p>
+      </div>
+    </section>
+
+    <div class="container bg-neutral-0">
+      <div class="d-flex flex-mb-col gap-24 py-80 py-mb-40 mb-mb-40">
         <!-- 導覽列 -->
-        <div class="col-2">
-          <nav class="pr-16">
-            <ul class="heading-xxs">
+        <div class="col-2 col-mb-12">
+          <nav class="overflow-x-auto pr-16">
+            <ul class="heading-xxs heading-mb-xxxs blogs-nav hide-scrollbar">
               <li class="tab-item active">
                 <a class="tab-link" href="">全部</a>
               </li>
@@ -100,26 +121,26 @@
         </div>
 
         <!-- 卡片内容 -->
-        <div class="col-10">
+        <div class="col-10 col-mb-12">
           <ul>
             <li>
-              <a href="" class="d-flex gap-24 mb-24">
+              <a href="" class="d-flex flex-mb-col gap-24 gap-mb-8 mb-24">
                 <div class="card-pic">
                   <img src="./pic/img.png" alt="網頁微互動藝術部落格封面" />
                 </div>
                 <div class="card-content">
-                  <p class="paragraph-md">
+                  <p class="paragraph-md paragraph-mb-sm">
                     <span>UIUX 設計</span>
                     <span>·</span>
                     <span>網頁設計</span>
                     <span>·</span>
                     <span>前端技術</span>
                   </p>
-                  <h2 class="heading-sm">
+                  <h2 class="heading-sm heading-mb-xs">
                     網頁裡的微互動藝術：利用 CSS 與 JS
                     動畫為諮詢網站注入靈魂並提升用戶轉化率
                   </h2>
-                  <div class="paragraph-sm d-flex">
+                  <div class="paragraph-sm paragraph-mb-xs d-flex">
                     <time datetime="2022-10-16">Oct 16, 2022</time>
                     <div class="d-flex ml-auto gap-12">
                       <!-- visibility icon 區域 -->
@@ -142,23 +163,23 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex gap-24 mb-24">
+              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
                 <div class="card-pic">
                   <img src="./pic/img (2).png" alt="職人手記部落格封面" />
                 </div>
                 <div class="card-content">
-                  <p class="paragraph-md">
+                  <p class="paragraph-md paragraph-mb-sm">
                     <span>UIUX 設計</span>
                     <span>·</span>
                     <span>設計規範</span>
                     <span>·</span>
                     <span>前端技術</span>
                   </p>
-                  <h2 class="heading-sm">
+                  <h2 class="heading-sm heading-mb-xs">
                     10年職人手記：如何運用 Figma 與 Storybook
                     打造美感與邏輯兼具的企業級設計系統
                   </h2>
-                  <div class="paragraph-sm d-flex">
+                  <div class="paragraph-sm paragraph-mb-xs d-flex">
                     <time datetime="2022-10-16">Oct 16, 2022</time>
                     <div class="d-flex ml-auto gap-12">
                       <!-- visibility icon 區域 -->
@@ -181,22 +202,22 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex gap-24 mb-24">
+              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
                 <div class="card-pic">
                   <img src="./pic/img (3).png" alt="平面識別部落格封面" />
                 </div>
                 <div class="card-content">
-                  <p class="paragraph-md">
+                  <p class="paragraph-md paragraph-mb-sm">
                     <span>品牌設計</span>
                     <span>·</span>
                     <span>平面設計</span>
                     <span>·</span>
                     <span>UIUX 設計</span>
                   </p>
-                  <h2 class="heading-sm">
+                  <h2 class="heading-sm heading-mb-xs">
                     從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯
                   </h2>
-                  <div class="paragraph-sm d-flex">
+                  <div class="paragraph-sm paragraph-mb-xs d-flex">
                     <time datetime="2022-10-16">Oct 16, 2022</time>
                     <div class="d-flex ml-auto gap-12">
                       <!-- visibility icon 區域 -->
@@ -219,23 +240,23 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex gap-24 mb-24">
+              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
                 <div class="card-pic">
                   <img src="./pic/img(4).png" alt="AI介面設計部落格封面" />
                 </div>
                 <div class="card-content">
-                  <p class="paragraph-md">
+                  <p class="paragraph-md paragraph-mb-sm">
                     <span>UIUX 設計</span>
                     <span>·</span>
                     <span>前端技術</span>
                     <span>·</span>
                     <span>AI 趨勢應用</span>
                   </p>
-                  <h2 class="heading-sm">
+                  <h2 class="heading-sm heading-mb-xs">
                     當 AI
                     遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力
                   </h2>
-                  <div class="paragraph-sm d-flex">
+                  <div class="paragraph-sm paragraph-mb-xs d-flex">
                     <time datetime="2022-10-16">Oct 16, 2022</time>
                     <div class="d-flex ml-auto gap-12">
                       <!-- visibility icon 區域 -->
@@ -258,23 +279,23 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex gap-24 mb-24">
+              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
                 <div class="card-pic">
                   <img src="./pic/img (5).png" alt="金融設計部落格封面" />
                 </div>
                 <div class="card-content">
-                  <p class="paragraph-md">
+                  <p class="paragraph-md heading-mb-xs">
                     <span>前端技術</span>
                     <span>·</span>
                     <span>後端架構</span>
                     <span>·</span>
                     <span>AI 趨勢應用</span>
                   </p>
-                  <h2 class="heading-sm">
+                  <h2 class="heading-sm paragraph-mb-sm">
                     揭開金融 App 的設計密碼：如何優化 Open Bank API
                     的複雜數據呈現與後端串接安全性
                   </h2>
-                  <div class="paragraph-sm d-flex">
+                  <div class="paragraph-sm paragraph-mb-xs d-flex">
                     <time datetime="2022-10-16">Oct 16, 2022</time>
                     <div class="d-flex ml-auto gap-12">
                       <!-- visibility icon 區域 -->
@@ -300,6 +321,54 @@
         </div>
       </div>
     </div>
+
+    <!-- Subscription -->
+    <section class="subscriptions bg-primary-50">
+      <div class="container relative">
+        <div class="d-flex flex-mb-col gap-24 flex-mb-col gap-mb-0 mx-mb--12">
+          <div class="col-5 col-mb-12">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription.png?raw=true"
+              alt=""
+            />
+          </div>
+          <div class="col-7 col-mb-12">
+            <div
+              class="text-neutral-0 px-40 py-mb-40 px-mb-12 h-full d-flex flex-col justify-content-center py-80 py-mb-40"
+            >
+              <!-- 標題 -->
+              <h2 class="mb-24 mb-mb-12">
+                <span class="d-block heading-xxxs heading-mb-xxxxs"
+                  >電子報訂閱</span
+                >
+                <span class="d-block heading-xxxl heading-mb-xl"
+                  >SUBSCRIPTION</span
+                >
+              </h2>
+              <!-- 內文 -->
+              <p class="paragraph-md mb-24 paragraph-mb-sm">
+                你也在追求設計美感與技術落地的完美平衡嗎？作為資深設計師兼工程師，我深知跨領域協作的痛點。訂閱電子報，我將分享如何利用
+                AI 工具提升產能！
+              </p>
+              <!-- 輸入框 -->
+              <div class="d-flex rounded-40 btn-outline p-8">
+                <input
+                  class="paragraph-md py-12 pl-24 text-neutral-0 bg-transparent border-0 focus-outline-0 flex-1 paragraph-mb-sm"
+                  type="text"
+                  placeholder="電子信箱"
+                />
+                <button
+                  type="button"
+                  class="label-md btn-reset py-12 px-24 bg-neutral-0 rounded-full text-neutral-700 label-mb-sm"
+                >
+                  送出
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-primary-900 py-80 px-mb-12 py-mb-40">

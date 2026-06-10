@@ -1,3 +1,27 @@
+/* banner */
+.blogs-banner {
+  position: relative;
+  background-image: url(../pic/blog_banner.png);
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-40a);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.blogs-banner-bg-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .tab-item {
   text-align: center;
   color: var(--color-neutral-700);
@@ -11,7 +35,7 @@
 
 .tab-link {
   display: block;
-  padding: 12px 0;
+  padding: 12px 53px;
 }
 
 .card-content {
@@ -21,4 +45,52 @@
   flex-direction: column;
   margin: auto 0;
   gap: 12px;
+}
+
+@media (max-width: 992px) {
+  .blogs-banner-bg-text {
+    top: 90%;
+  }
+
+  .blogs-nav {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .tab-link {
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+
+  .card-content {
+    gap: 8px;
+  }
+}
+
+/* Subscription */
+.subscriptions {
+  position: relative;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-60a);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .subscriptions .col-5 img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }

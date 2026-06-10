@@ -64,6 +64,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
 /* Display - font-weight: 700 */
 .display-1 {
   font-size: 300px;
@@ -99,7 +103,7 @@ body {
   font-size: 32px;
   font-weight: 700;
 }
-.heading-mb {
+.heading-md {
   font-size: 28px;
   font-weight: 700;
 }
@@ -199,6 +203,9 @@ body {
   background-color: var(--color-neutral-700);
 }
 
+.text-primary-50 {
+  color: var(--color-primary-50);
+}
 .text-neutral-0 {
   color: var(--color-neutral-0);
 }
@@ -371,6 +378,10 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.py-109 {
+  padding-top: 109px;
+  padding-bottom: 109px;
+}
 
 .pb-4 {
   padding-bottom: 4px;
@@ -472,7 +483,7 @@ body {
   );
 }
 .col-10 {
-  --span: 7;
+  --span: 10;
   --gap--count: calc(var(--span)-1);
   width: calc(
     (100% - var(--gutter--breath)) / var(--column) * var(--span) +
@@ -480,7 +491,7 @@ body {
   );
 }
 .col-12 {
-  --span: 7;
+  --span: 12;
   --gap--count: calc(var(--span)-1);
   width: calc(
     (100% - var(--gutter--breath)) / var(--column) * var(--span) +
@@ -498,6 +509,12 @@ body {
 
   .flex-mb-col {
     flex-direction: column;
+  }
+
+  .display-mb-2 {
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 1.2;
   }
 
   .heading-mb-xl {
@@ -518,7 +535,7 @@ body {
     font-size: 20px;
     font-weight: 700;
   }
-  .heading-mobile-xxxxs {
+  .heading-mb-xxxxs {
     font-size: 14px;
     font-weight: 700;
   }
@@ -562,6 +579,10 @@ body {
     padding: 24px;
   }
 
+  .py-mb-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
   .py-mb-16 {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -569,6 +590,10 @@ body {
   .py-mb-40 {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .py-mb-140 {
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
 
   .pb-mb-16 {
@@ -598,6 +623,9 @@ body {
   .mb-mb-0 {
     margin-bottom: 0px;
   }
+  .mb-mb-4 {
+    margin-bottom: 4px;
+  }
   .mb-mb-8 {
     margin-bottom: 8px;
   }
@@ -609,6 +637,9 @@ body {
   }
   .mb-mb-32 {
     margin-bottom: 32px;
+  }
+  .mb-mb-40 {
+    margin-bottom: 40px;
   }
 
   .mx-mb--12 {
@@ -624,7 +655,10 @@ body {
   }
 
   .gap-mb-0 {
-    gap: 0;
+    gap: 0px;
+  }
+  .gap-mb-8 {
+    gap: 8px;
   }
   .gap-mb-12 {
     gap: 12px;
@@ -698,7 +732,7 @@ body {
     max-height: 0px; /* 將高度收合為 0，避免元素佔據垂直空間 */
     overflow: hidden; /* 隱藏超出 max-height 範圍的內容 */
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0px;
     text-align: center;
     transition:
