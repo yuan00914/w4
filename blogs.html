@@ -47,8 +47,10 @@
               </a>
 
               <!-- 行動版選單按鈕（漢堡按鈕） -->
-              <button class="btn-menu ml-auto" type="button">
-                <span class="material-symbols-outlined">dehaze</span>
+              <button class="btn-menu ml-auto" type="button" aria-label="選單">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
               </button>
 
               <!-- 主導覽選單 -->
@@ -70,10 +72,11 @@
       <div class="container relative">
         <h1 class="col-12 text-neutral-0 text-center">
           <span
-            class="d-block heading-xxxl heading-mb-xl mb-8 mb-mb-4 animate__fadeInUp"
+            class="d-block heading-xxxl heading-mb-xl mb-8 mb-mb-4 animate__animated animate__fadeInUp"
             >BLOGS</span
           >
-          <span class="d-block heading-xxl heading-mb-xl animate__fadeInUp"
+          <span
+            class="d-block heading-xxl heading-mb-xl animate__animated animate__fadeInUp"
             >部落格</span
           >
         </h1>
@@ -87,8 +90,10 @@
       <div class="d-flex flex-mb-col gap-24 py-80 py-mb-40 mb-mb-40">
         <!-- 導覽列 -->
         <div class="col-2 col-mb-12">
-          <nav class="overflow-x-auto pr-16">
-            <ul class="heading-xxs heading-mb-xxxs blogs-nav hide-scrollbar">
+          <nav class="pr-16">
+            <ul
+              class="heading-xxs heading-mb-xxxs blogs-nav blogs-nav overflow-x-auto hide-scrollbar"
+            >
               <li class="tab-item active">
                 <a class="tab-link" href="">全部</a>
               </li>
@@ -124,8 +129,8 @@
         <div class="col-10 col-mb-12">
           <ul>
             <li>
-              <a href="" class="d-flex flex-mb-col gap-24 gap-mb-8 mb-24">
-                <div class="card-pic">
+              <a href="#" class="d-flex flex-mb-col gap-24 gap-mb-8 mb-24">
+                <div class="card-pic overflow-hidden">
                   <img src="./pic/img.png" alt="網頁微互動藝術部落格封面" />
                 </div>
                 <div class="card-content">
@@ -163,8 +168,8 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
-                <div class="card-pic">
+              <a href="#" class="d-flex flex-mb-col gap-24 mb-24">
+                <div class="card-pic overflow-hidden">
                   <img src="./pic/img (2).png" alt="職人手記部落格封面" />
                 </div>
                 <div class="card-content">
@@ -202,8 +207,8 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
-                <div class="card-pic">
+              <a href="#" class="d-flex flex-mb-col gap-24 mb-24">
+                <div class="card-pic overflow-hidden">
                   <img src="./pic/img (3).png" alt="平面識別部落格封面" />
                 </div>
                 <div class="card-content">
@@ -240,8 +245,8 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
-                <div class="card-pic">
+              <a href="#" class="d-flex flex-mb-col gap-24 mb-24">
+                <div class="card-pic overflow-hidden">
                   <img src="./pic/img(4).png" alt="AI介面設計部落格封面" />
                 </div>
                 <div class="card-content">
@@ -279,8 +284,8 @@
               </a>
             </li>
             <li>
-              <a href="" class="d-flex flex-mb-col gap-24 mb-24">
-                <div class="card-pic">
+              <a href="#" class="d-flex flex-mb-col gap-24 mb-24">
+                <div class="card-pic overflow-hidden">
                   <img src="./pic/img (5).png" alt="金融設計部落格封面" />
                 </div>
                 <div class="card-content">
@@ -322,6 +327,47 @@
       </div>
     </div>
 
+    <!-- pagination -->
+    <div class="container">
+      <nav class="pagination text-neutral-700" aria-label="文章分頁">
+        <ul
+          class="pagination-list d-flex gap-16 mb-80 mb-mb-40 paragraph-md justify-content-end align-items-center"
+        >
+          <li>
+            <a class="pagination-link p-12" href="#" aria-label="上一頁">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_left
+              </span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link active py-8 px-15 rounded-circle" href="#"
+              >1</a
+            >
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link py-8 px-15" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link py-8 px-15" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link py-8 px-15" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link py-8 px-15" href="#">20</a>
+          </li>
+          <li>
+            <a class="pagination-link p-12" href="#" aria-label="下一頁">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_right
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <!-- Subscription -->
     <section class="subscriptions bg-primary-50">
       <div class="container relative">
@@ -329,7 +375,7 @@
           <div class="col-5 col-mb-12">
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription.png?raw=true"
-              alt=""
+              alt="裝飾圖片"
             />
           </div>
           <div class="col-7 col-mb-12">

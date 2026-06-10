@@ -166,6 +166,27 @@ body {
   border: 1px solid currentColor;
 }
 
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-btn .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.45);
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
 .border-0 {
   border: none;
 }
@@ -281,6 +302,9 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 
 .d-flex {
   display: flex;
@@ -297,6 +321,9 @@ body {
 
 .justify-content-center {
   justify-content: center;
+}
+.justify-content-end {
+  justify-content: flex-end;
 }
 .justify-content-between {
   justify-content: space-between;
@@ -341,6 +368,9 @@ body {
 .mb-60 {
   margin-bottom: 60px;
 }
+.mb-80 {
+  margin-bottom: 80px;
+}
 .mb-92 {
   margin-bottom: 92px;
 }
@@ -361,6 +391,10 @@ body {
 .py-4 {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .py-12 {
   padding-top: 12px;
@@ -391,6 +425,10 @@ body {
   padding-left: 12px;
   padding-right: 12px;
 }
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .px-24 {
   padding-left: 24px;
   padding-right: 24px;
@@ -419,6 +457,9 @@ body {
 }
 .gap-12 {
   gap: 12px;
+}
+.gap-16 {
+  gap: 16x;
 }
 .gap-24 {
   gap: 24px;
@@ -711,6 +752,19 @@ body {
   font: inherit; /* 繼承父層字型設定 */
   cursor: pointer; /* 滑鼠移入時顯示手型游標 */
 }
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-neutral-700);
+  border-radius: 999px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+.hamburger-line + .hamburger-line {
+  margin-top: 6px;
+}
 
 /* 頁面內容佔位區塊，用於模擬實際內容高度 */
 .placeholder {
@@ -722,6 +776,17 @@ body {
   .btn-menu {
     display: block;
     border-radius: 50%;
+  }
+  .btn-menu.active .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .btn-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .btn-menu.active .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .nav-list {

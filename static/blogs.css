@@ -38,6 +38,12 @@
   padding: 12px 53px;
 }
 
+.card-pic img {
+  transition: transform 0.4s ease;
+}
+.card-pic:hover img {
+  transform: scale(1.1);
+}
 .card-content {
   flex: 1;
   color: var(--color-neutral-700);
@@ -47,6 +53,13 @@
   gap: 12px;
 }
 
+.pagination-link.active,
+.pagination-link:hover {
+  background-color: var(--color-neutral-700);
+  color: var(--color-neutral-0);
+  border-radius: 999px;
+}
+
 @media (max-width: 992px) {
   .blogs-banner-bg-text {
     top: 90%;
@@ -54,7 +67,6 @@
 
   .blogs-nav {
     display: flex;
-    overflow-x: auto;
   }
 
   .tab-link {
@@ -64,6 +76,10 @@
 
   .card-content {
     gap: 8px;
+  }
+
+  .pagination-list {
+    justify-content: center;
   }
 }
 

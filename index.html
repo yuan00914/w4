@@ -47,8 +47,10 @@
               </a>
 
               <!-- 行動版選單按鈕（漢堡按鈕） -->
-              <button class="btn-menu ml-auto" type="button">
-                <span class="material-symbols-outlined">dehaze</span>
+              <button class="btn-menu ml-auto" type="button" aria-label="選單">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
               </button>
 
               <!-- 主導覽選單 -->
@@ -86,11 +88,18 @@
             </p>
 
             <!-- 按鈕群組 -->
-            <div class="label-md label-mb-sm d-flex gap-24 gap-mb-12">
-              <button class="btn bg-neutral-700 text-neutral-0" type="button">
+            <div
+              class="label-md label-mb-sm d-flex gap-24 gap-mb-12 animate__animated animate__fadeIn"
+            >
+              <button
+                class="btn bg-neutral-700 text-neutral-0 ripple-btn"
+                type="button"
+              >
                 與我聯絡
               </button>
-              <button class="btn resume" type="button">我的履歷</button>
+              <button class="btn resume ripple-btn" type="button">
+                我的履歷
+              </button>
             </div>
           </div>
 
@@ -98,7 +107,7 @@
             <img
               class="main-pic object-fit-cover mb-mb-24"
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_person.png?raw=true"
-              alt=""
+              alt="個人肖像圖片"
             />
 
             <!-- 裝飾圖片 -->
@@ -118,7 +127,7 @@
           <img
             class="decorate-3 w-80 h-80 flower-left-bottom"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_3.png?raw=true"
-            alt=""
+            alt="decorate-3"
           />
           <!-- 左下方小花旁的線條 -->
           <img
@@ -131,21 +140,21 @@
           <img
             class="decorate-4"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_4.png?raw=true"
-            alt=""
+            alt="decorate-4"
           />
 
           <!-- 左上方小花 -->
           <img
             class="decorate-3 flower-left-top"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_3.png?raw=true"
-            alt=""
+            alt="decorate-3"
           />
 
           <!-- 右上方小花 -->
           <img
             class="decorate-3 flower-right-center"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_3.png?raw=true"
-            alt=""
+            alt="decorate-3"
           />
         </div>
       </div>
@@ -164,7 +173,7 @@
 
         <!-- 服務列表 -->
         <ul
-          class="card-list hide-scrollbar text-neutral-700 d-flex gap-24 overflow-x-auto"
+          class="card-list hide-scrollbar text-neutral-700 d-flex gap-24 overflow-x-auto animate__animated animate__fadeIn"
         >
           <li class="col-3 card bg-primary-50 p-24 p-mb-12">
             <div class="d-flex mb-12 mb-mb-8">
@@ -268,7 +277,9 @@
           <li
             class="project-card bg-cover-center bg-primary-50 text-neutral-700 text-center py-28 pl-28 px-mb-16 pb-mb-16 mb-24"
           >
-            <div class="project-content bg-primary-50 p-40 p-mb-24">
+            <div
+              class="project-content bg-primary-50 p-40 p-mb-24 animate__animated animate__fadeIn"
+            >
               <time
                 class="paragraph-sm paragraph-mb-xs mb-12 d-block"
                 datetime="2025-10-16"
@@ -284,7 +295,7 @@
                 從品牌識別設計到 RWD 網站開發，打造療癒系植栽購物體驗
               </p>
               <button
-                class="btn-reset rounded-full text-neutral-0 lable-md lable-mb-sm px-24 py-12 bg-neutral-700"
+                class="btn-reset rounded-full text-neutral-0 lable-md lable-mb-sm px-24 py-12 bg-neutral-700 ripple-btn"
                 type="button"
               >
                 前往專案
@@ -292,7 +303,7 @@
             </div>
           </li>
           <li
-            class="project-card bg-cover-center bg-primary-50 text-neutral-700 text-center py-28 pl-28 px-mb-16 pb-mb-16 mb-24"
+            class="project-card bg-cover-center bg-primary-50 text-neutral-700 text-center py-28 pl-28 px-mb-16 pb-mb-16 mb-24 animate__animated animate__fadeIn"
           >
             <div class="project-content bg-primary-50 p-40 p-mb-24">
               <time
@@ -310,7 +321,7 @@
                 運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的操作介面
               </p>
               <button
-                class="btn-reset rounded-full text-neutral-0 lable-md lable-mb-sm px-24 py-12 bg-neutral-700"
+                class="btn-reset rounded-full text-neutral-0 lable-md lable-mb-sm px-24 py-12 bg-neutral-700 ripple-btn"
                 type="button"
               >
                 前往專案
@@ -318,7 +329,7 @@
             </div>
           </li>
           <li
-            class="project-card bg-cover-center bg-primary-50 text-neutral-700 text-center py-28 pl-28 px-mb-16 pb-mb-16 mb-24"
+            class="project-card bg-cover-center bg-primary-50 text-neutral-700 text-center py-28 pl-28 px-mb-16 pb-mb-16 mb-24 animate__animated animate__fadeIn"
           >
             <div class="project-content bg-primary-50 p-40 p-mb-24">
               <time
@@ -336,7 +347,7 @@
                 以溫暖、輕盈的視覺語言，精準定位高質感甜點市場的品牌形象
               </p>
               <button
-                class="btn-reset rounded-full text-neutral-0 lable-md lable-mb-sm px-24 py-12 bg-neutral-700"
+                class="btn-reset rounded-full text-neutral-0 lable-md lable-mb-sm px-24 py-12 bg-neutral-700 ripple-btn"
                 type="button"
               >
                 前往專案
@@ -346,7 +357,7 @@
         </ul>
         <!--     探索更多按鈕 -->
         <button
-          class="btn-reset rounded-full text-neutral-0 lable-md px-24 py-12 bg-neutral-700 d-block m-auto"
+          class="btn-reset rounded-full text-neutral-0 lable-md px-24 py-12 bg-neutral-700 d-block m-auto ripple-btn"
           type="button"
         >
           探索更多
@@ -375,7 +386,7 @@
         </div>
         <!--     部落個文章清單 -->
         <ul
-          class="d-flex gap-24 text-neutral-700 overflow-x-auto hide-scrollbar"
+          class="d-flex gap-24 text-neutral-700 overflow-x-auto hide-scrollbar animate__animated animate__fadeIn"
         >
           <li class="col-4 blog-card">
             <div>
@@ -504,7 +515,7 @@
           <div class="col-5 col-mb-12">
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription.png?raw=true"
-              alt=""
+              alt="裝飾圖片"
             />
           </div>
           <div class="col-7 col-mb-12">
@@ -534,7 +545,7 @@
                 />
                 <button
                   type="button"
-                  class="label-md btn-reset py-12 px-24 bg-neutral-0 rounded-full text-neutral-700 label-mb-sm"
+                  class="label-md btn-reset py-12 px-24 bg-neutral-0 rounded-full text-neutral-700 label-mb-sm ripple-btn"
                 >
                   送出
                 </button>
@@ -606,7 +617,7 @@
               ></textarea>
               <button
                 type="button"
-                class="btn-reset bg-neutral-0 text-neutral-700 py-12 w-full rounded-full"
+                class="btn-reset bg-neutral-0 text-neutral-700 py-12 w-full rounded-full ripple-btn"
               >
                 送出
               </button>
